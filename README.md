@@ -1,77 +1,89 @@
-ZendSkeletonApplication
-=======================
+Yii 2 Basic Application Template
+================================
 
-Introduction
+Yii 2 Basic Application Template is a skeleton Yii 2 application best for
+rapidly creating small projects.
+
+The template contains the basic features including user login/logout and a contact page.
+It includes all commonly used configurations that would allow you to focus on adding new
+features to your application.
+
+
+DIRECTORY STRUCTURE
+-------------------
+
+      assets/             contains assets definition
+      commands/           contains console commands (controllers)
+      config/             contains application configurations
+      controllers/        contains Web controller classes
+      mail/               contains view files for e-mails
+      models/             contains model classes
+      runtime/            contains files generated during runtime
+      tests/              contains various tests for the basic application
+      vendor/             contains dependent 3rd-party packages
+      views/              contains view files for the Web application
+      web/                contains the entry script and Web resources
+
+
+
+REQUIREMENTS
 ------------
-This is a simple, skeleton application using the ZF2 MVC layer and module
-systems. This application is meant to be used as a starting place for those
-looking to get their feet wet with ZF2.
 
-Installation
+The minimum requirement by this application template that your Web server supports PHP 5.4.0.
+
+
+INSTALLATION
 ------------
 
-Using Composer (recommended)
-----------------------------
-The recommended way to get a working copy of this project is to clone the repository
-and use `composer` to install dependencies using the `create-project` command:
+### Install from an Archive File
 
-    curl -s https://getcomposer.org/installer | php --
-    php composer.phar create-project -sdev --repository-url="https://packages.zendframework.com" zendframework/skeleton-application path/to/install
+Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
+a directory named `basic` that is directly under the Web root.
 
-Alternately, clone the repository and manually invoke `composer` using the shipped
-`composer.phar`:
+You can then access the application through the following URL:
 
-    cd my/project/dir
-    git clone git://github.com/zendframework/ZendSkeletonApplication.git
-    cd ZendSkeletonApplication
-    php composer.phar self-update
-    php composer.phar install
+~~~
+http://localhost/basic/web/
+~~~
 
-(The `self-update` directive is to ensure you have an up-to-date `composer.phar`
-available.)
 
-Another alternative for downloading the project is to grab it via `curl`, and
-then pass it to `tar`:
+### Install via Composer
 
-    cd my/project/dir
-    curl -#L https://github.com/zendframework/ZendSkeletonApplication/tarball/master | tar xz --strip-components=1
+If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
+at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
-You would then invoke `composer` to install dependencies per the previous
-example.
+You can then install this application template using the following command:
 
-Using Git submodules
---------------------
-Alternatively, you can install using native git submodules:
+~~~
+php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta4"
+php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
+~~~
 
-    git clone git://github.com/zendframework/ZendSkeletonApplication.git --recursive
+Now you should be able to access the application through the following URL, assuming `basic` is the directory
+directly under the Web root.
 
-Web Server Setup
-----------------
+~~~
+http://localhost/basic/web/
+~~~
 
-### PHP CLI Server
 
-The simplest way to get started if you are using PHP 5.4 or above is to start the internal PHP cli-server in the root directory:
+CONFIGURATION
+-------------
 
-    php -S 0.0.0.0:8080 -t public/ public/index.php
+### Database
 
-This will start the cli-server on port 8080, and bind it to all network
-interfaces.
+Edit the file `config/db.php` with real data, for example:
 
-**Note: ** The built-in CLI server is *for development only*.
+```php
+return [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+    'username' => 'root',
+    'password' => '1234',
+    'charset' => 'utf8',
+];
+```
 
-### Apache Setup
+**NOTE:** Yii won't create the database for you, this has to be done manually before you can access it.
 
-To setup apache, setup a virtual host to point to the public/ directory of the
-project and you should be ready to go! It should look something like below:
-
-    <VirtualHost *:80>
-        ServerName zf2-tutorial.localhost
-        DocumentRoot /path/to/zf2-tutorial/public
-        SetEnv APPLICATION_ENV "development"
-        <Directory /path/to/zf2-tutorial/public>
-            DirectoryIndex index.php
-            AllowOverride All
-            Order allow,deny
-            Allow from all
-        </Directory>
-    </VirtualHost>
+Also check and edit the other files in the `config/` directory to customize your application.

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <settings>
+        <application>
+            <appkey name = "alptest">
+                <setting_name name="alopecia_status_0" value ="1"/>
+                <setting_name name="alopecia_status_1" value ="1"/>
+                <setting_name name="alopecia_status_2" value ="1"/>
+                <setting_name name="alopecia_status_3" value ="1"/>
+                <setting_name name="alopecia_option_0" value = "Generalized"/>
+                <setting_name name="alopecia_option_1" value = "Patchy"/>
+                <setting_name name="alopecia_option_2" value = "Test 1"/>
+                <setting_name name="alopecia_option_3" value = "Test 2"/>
+                <setting_name name="alopecia_color_0" value = "rgb(255, 0, 0)"/>
+                <setting_name name="alopecia_color_1" value = "rgb(0, 0, 255)"/>
+                <setting_name name="alopecia_color_2" value = "rgb(255, 255, 0)"/>
+                <setting_name name="alopecia_color_3" value = "rgb(0, 255, 0)"/>
+            </appkey>
+            <appkey name = "bhvtest">
+                <setting_name name="behavorial_observation_time" value = "300"/>
+            </appkey>
+            <appkey name = "nvobjtest">
+                <setting_name name="novel_object_observation_time" value = "300"/>
+            </appkey>
+        </application>
+    </settings>
+</xs:schema>

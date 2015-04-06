@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+   
+    <section name="Normal" key="normal">
+        <value name="Inactive" id="inactive"/>
+        <value name="Groom" id="groom" linkable="true"/>
+        <value name="Observe" id="observe" linkable="true"/>
+        <value name="Explore" id="explore" linkable="true"/>
+        <value name="Manipulate" id="manipulate" linkable="true"/>
+        <value name="Gnaw" id="gnaw" linkable="true"/>
+        <value name="Forage" id="forage" linkable="true"/>
+        <value name="Eat" id="eat" linkable="true"/>
+        <value name="Drink" id="drink" linkable="true"/>
+        <value name="Urinate" id="urinate"/>
+        <value name="Defecate" id="defecate"/>
+        <value name="Locomote" id="locomote"/>
+        <value name="Other" id="other" linkable="true"/> 
+    </section>
+    <section name="Abnormal" key="abnormal">
+        <value name="Hair-Pluck" id="hair-pluck" linkable="true"/>
+        <value name="Object Directed Aggression" id="object_directed_aggression" linkable="true"/>
+        <value name="Locomotor Stereotype" id="locomotor_stereotype" linkable="true"/>
+        <value name="Mock Bite" id="mock_bite" linkable="true"/>
+        <value name="Self-Injure" id="self-injure" linkable="true"/>
+        <value name="Self-Suck" id="self-suck" linkable="true"/>
+        <value name="Self-Grasp" id="self-grasp" linkable="true"/>
+        <value name="Salute/Eye-Poke" id="salute_eye-poke" linkable="true"/>
+        <value name="Scratch" id="scratch" linkable="true"/>
+        <value name="Bruxism" id="bruxism" linkable="true"/>
+        <value name="Floating Limb" id="floating_limb"/>
+        <value name="Bite/Lick Cage" id="bite_lick_cage" linkable="true"/>
+        <value name="Cage Bar Strumming" id="cage_bar_strumming" linkable="true"/>
+        <value name="Body-Shake" id="body-shake" linkable="true"/>
+        <value name="Huddle" id="huddle"/>
+        <value name="Together-Together" id="together-together" linkable="true"/>
+        <value name="Regurgitate" id="regurgitate"/>
+        <value name="Feces Painting" id="feces_painting"/>
+        <value name="Coprophagy" id="coprophagy"/>
+        <value name="Urophagy" id="urophagy"/>
+        <value name="Other" id="other" linkable="true"/> 
+    </section>
+    <section name="Aggressive" key="aggressive">
+        <value name="Open-Mouth Threat" id="open-mouth_threat" linkable="true"/>
+        <value name="Yawn" id="yawn" linkable="true"/>
+        <value name="Stare Threat" id="stare_threat" linkable="true"/>
+        <value name="Erect Posture" id="erect_posture" linkable="true"/>
+        <value name="Canine Sharpening" id="canine_sharpening" linkable="true"/>
+        <value name="Cage Bounce" id="cage_bounce" linkable="true"/>
+        <value name="Cage Shake" id="cage_shake" linkable="true"/>
+        <value name="Cage Bang" id="cage_bang" linkable="true"/>
+        <value name="Lunge" id="lunge" linkable="true"/>
+        <value name="Vocalize (Bark)" id="vocalize__bark_" linkable="true"/>
+        <value name="Vocalize (Grunt)" id="vocalize__grunt_" linkable="true"/>
+        <value name="Displace" id="displace" linkable="true"/>
+        <value name="Mount" id="mount" linkable="true"/>
+        <value name="Fight" id="fight" linkable="true"/>
+        <value name="Retaliate" id="retaliate" linkable="true"/>
+        <value name="Push" id="push" linkable="true"/>
+        <value name="Pull/Grab" id="pull_grab" linkable="true"/>
+        <value name="Bite" id="bite" linkable="true"/>
+        <value name="Slap/Hit" id="slap_hit" linkable="true"/>
+        <value name="Chase" id="chase" linkable="true"/>
+        <value name="Hold Down" id="hold_down" linkable="true"/>
+        <value name="Ventral Embrace with Fight" id="ventral_embrace_with_fight" linkable="true"/>
+        <value name="Other" id="other" linkable="true"/> 
+    </section>
+    <section name="Affiliative" key="affiliative">
+        <value name="Lip-smack" id="lip-smack" linkable="true"/>
+        <value name="Passive Contact" id="passive_contact" linkable="true"/>
+        <value name="Approach" id="approach" linkable="true"/>
+        <value name="Allogroom" id="allogroom" linkable="true"/>
+        <value name="Present for Groom" id="present_for_groom" linkable="true"/>
+        <value name="Receive Groom" id="receive_groom" linkable="true"/>
+        <value name="Touch" id="touch" linkable="true"/>
+        <value name="Embrace" id="embrace" linkable="true"/>
+        <value name="Play" id="play" linkable="true"/>
+        <value name="Genital Inspection" id="genital_inspection" linkable="true"/>
+        <value name="Face Inspection" id="face_inspection" linkable="true"/>
+        <value name="Vocalize (coo)" id="vocalize__coo_" linkable="true"/>
+        <value name="Other" id="other" linkable="true"/> 
+    </section>
+    <section name="Submissive" key="submissive">
+        <value name="Fear Grimace" id="fear_grimace" linkable="true"/>
+        <value name="Rapid Glances" id="rapid_glances" linkable="true"/>
+        <value name="Crouch" id="crouch" linkable="true"/>
+        <value name="Avoid" id="avoid" linkable="true"/>
+        <value name="Vocalize (screech)" id="vocalize__screech_" linkable="true"/>
+        <value name="Present Rump" id="present_rump" linkable="true"/> 
+    </section>
+        
+</xs:schema>
